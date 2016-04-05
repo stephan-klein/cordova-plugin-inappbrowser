@@ -184,4 +184,4 @@ var IABExecs = {
 
 module.exports = IABExecs;
 
-require('cordova/exec/proxy').add('InAppBrowser', module.exports);
+require('cordova/exec/proxy').add('InAppBrowserOrig', module.exports);

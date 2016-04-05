@@ -225,4 +225,4 @@ var IAB = {
 
 module.exports = IAB;
 
-require("cordova/exec/proxy").add("InAppBrowser", module.exports);
+require("cordova/exec/proxy").add("InAppBrowserOrig", module.exports);

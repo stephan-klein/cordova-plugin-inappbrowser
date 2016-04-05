@@ -35,19 +35,19 @@
 
     <!-- android -->
     <platform name="android">
-        <js-module src="www/inappbrowser.js" name="inappbrowser">
-            <clobbers target="cordova.InAppBrowser.open" />
+        <js-module src="www/inappbrowser.js" name="inappbrowserorig">
+            <clobbers target="cordova.InAppBrowserOrig.open" />
             <clobbers target="window.open" />
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="InAppBrowser"> 
-                <param name="android-package" value="org.apache.cordova.inappbrowsero.InAppBrowser"/>
+            <feature name="InAppBrowserOrig">
+                <param name="android-package" value="org.apache.cordova.inappbrowsero.InAppBrowserOrig"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/InAppBrowser.java" target-dir="src/org/apache/cordova/inappbrowsero" />
-        <source-file src="src/android/InAppBrowserDialog.java" target-dir="src/org/apache/cordova/inappbrowsero" />
-        <source-file src="src/android/InAppChromeClient.java" target-dir="src/org/apache/cordova/inappbrowsero" />
+        <source-file src="src/android/InAppBrowserOrig.java" target-dir="src/org/apache/cordova/inappbrowsero" />
+        <source-file src="src/android/InAppBrowserOrigDialog.java" target-dir="src/org/apache/cordova/inappbrowsero" />
+        <source-file src="src/android/InAppChromeClientOrig.java" target-dir="src/org/apache/cordova/inappbrowsero" />
 
         <!--  drawable src/android/resources -->
         <resource-file src="src/android/res/drawable-hdpi/ic_action_next_item.png" target="res/drawable-hdpi/ic_action_next_item.png" />

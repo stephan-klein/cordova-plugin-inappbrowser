@@ -31,13 +31,13 @@ import com.amazon.android.webkit.AmazonWebStorage;
 import com.amazon.android.webkit.AmazonWebView;
 import com.amazon.android.webkit.AmazonWebViewClient;
 
-public class InAppChromeClient extends AmazonWebChromeClient {
+public class InAppChromeClientOrig extends AmazonWebChromeClient {
 
     private CordovaWebView webView;
-    private String LOG_TAG = "InAppChromeClient";
+    private String LOG_TAG = "InAppChromeClientOrig";
     private long MAX_QUOTA = 100 * 1024 * 1024;
 
-    public InAppChromeClient(CordovaWebView webView) {
+    public InAppChromeClientOrig(CordovaWebView webView) {
         super();
         this.webView = webView;
     }
@@ -89,8 +89,8 @@ public class InAppChromeClient extends AmazonWebChromeClient {
      * If the client returns true, WebView will assume that the client will
      * handle the prompt dialog and call the appropriate JsPromptResult method.
      *
-     * The prompt bridge provided for the InAppBrowser is capable of executing any
-     * oustanding callback belonging to the InAppBrowser plugin. Care has been
+     * The prompt bridge provided for the InAppBrowserOrig is capable of executing any
+     * oustanding callback belonging to the InAppBrowserOrig plugin. Care has been
      * taken that other callbacks cannot be triggered, and that no other code
      * execution is possible.
      *
@@ -99,7 +99,7 @@ public class InAppChromeClient extends AmazonWebChromeClient {
      * gap-iab://<callbackId>
      *
      * where <callbackId> is the string id of the callback to trigger (something
-     * like "InAppBrowser0123456789")
+     * like "InAppBrowserOrig0123456789")
      *
      * If present, the prompt message is expected to be a JSON-encoded value to
      * pass to the callback. A JSON_EXCEPTION is returned if the JSON is invalid.
@@ -135,7 +135,7 @@ public class InAppChromeClient extends AmazonWebChromeClient {
             else
             {
                 // Anything else with a gap: prefix should get this message
-                LOG.w(LOG_TAG, "InAppBrowser does not support Cordova API calls: " + url + " " + defaultValue); 
+                LOG.w(LOG_TAG, "InAppBrowserOrig does not support Cordova API calls: " + url + " " + defaultValue);
                 result.cancel();
                 return true;
             }

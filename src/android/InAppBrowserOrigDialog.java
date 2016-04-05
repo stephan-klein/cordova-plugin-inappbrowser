@@ -29,16 +29,16 @@ import org.json.JSONObject;
 /**
  * Created by Oliver on 22/11/2013.
  */
-public class InAppBrowserDialog extends Dialog {
+public class InAppBrowserOrigDialog extends Dialog {
     Context context;
-    InAppBrowser inAppBrowser = null;
+    InAppBrowserOrig inAppBrowser = null;
 
-    public InAppBrowserDialog(Context context, int theme) {
+    public InAppBrowserOrigDialog(Context context, int theme) {
         super(context, theme);
         this.context = context;
     }
 
-    public void setInAppBroswer(InAppBrowser browser) {
+    public void setInAppBroswer(InAppBrowserOrig browser) {
         this.inAppBrowser = browser;
     }
 
