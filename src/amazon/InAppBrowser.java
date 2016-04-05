@@ -16,10 +16,10 @@
        specific language governing permissions and limitations
        under the License.
 */
-package org.apache.cordova.inappbrowser;
+package org.apache.cordova.inappbrowsero;
 
 import android.annotation.SuppressLint;
-import org.apache.cordova.inappbrowser.InAppBrowserDialog;
+import org.apache.cordova.inappbrowsero.InAppBrowserDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;

@@ -41,7 +41,7 @@
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="InAppBrowser"> 
-                <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser"/>
+                <param name="android-package" value="org.apache.cordova.inappbrowsero.InAppBrowser"/>
             </feature>
         </config-file>
 
@@ -75,7 +75,7 @@
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="InAppBrowser"> 
-                <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser"/>
+                <param name="android-package" value="org.apache.cordova.inappbrowsero.InAppBrowser"/>
             </feature>
         </config-file>
 
